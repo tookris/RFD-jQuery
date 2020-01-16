@@ -11,16 +11,14 @@
 
       $(document).ready(function(){
         $("#cacher").click(function(){
-          $("p").hide();
+          $("p").fadeOut(2000);
         });
         $("#afficher").click(function(){
-          $("p").show();
+          $("p").fadeIn(4000);
         })
       });
-
-
     </script>
-    <p>je suis kris</p>
+      <p>je suis kris</p>
       <button id="afficher">je suis kris</button>
       <button id="cacher">cacher</button>
   </body>
