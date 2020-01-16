@@ -4,22 +4,25 @@
     <meta charset="utf-8">
     <title>jQuery</title>
     <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jqueryui.js"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
     <script>
-
-      $(document).ready(function(){
-        $("#cacher").click(function(){
-          $("p").fadeOut(2000);
-        });
-        $("#afficher").click(function(){
-          $("p").fadeIn(4000);
-        })
-      });
-    </script>
-      <p>je suis kris</p>
-      <button id="afficher">je suis kris</button>
-      <button id="cacher">cacher</button>
+    $(function(){
+      $("#michel").accordion();
+    })
+  </script>
+  <div id="michel">
+    <h1>Titre 1</h1>
+    <p>ceci est un paragraphe,blababaaba</p>
+    <h1>Titre 1</h1>
+    <p>ceci est un paragraphe,blababaaba</p>
+    <h1>Titre 1</h1>
+    <p>ceci est un paragraphe,blababaaba</p>
+    <h1>Titre 1</h1>
+    <p>ceci est un paragraphe,blababaaba</p>
+  </div>
   </body>
 </html>
